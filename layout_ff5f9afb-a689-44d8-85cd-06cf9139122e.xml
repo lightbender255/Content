@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Packaging mapfile for Genesis: PC -->
+<Package>
+    <!-- Masterfiles -->
+    <Chunk Id="1001" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="*.esm"/>
+    </Chunk>
+
+    <!-- Animations -->
+    <Chunk Id="1002" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Animations*.ba2"/>
+    </Chunk>
+
+    <!-- Animations: Faces -->
+    <Chunk Id="1003" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - FaceAnimation*.ba2"/>
+    </Chunk>
+
+    <!-- Interface -->
+    <Chunk Id="1004" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Interface.ba2"/>
+    </Chunk>
+
+    <!-- Localization -->
+    <Chunk Id="1005" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Localization.ba2"/>
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="BlueprintShips-Starfield - Localization.ba2"/>
+    </Chunk>
+
+    <!-- Materials -->
+    <Chunk Id="1006" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Materials.ba2"/>
+    </Chunk>
+
+    <!-- Meshes -->
+    <Chunk Id="1007" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Meshes??.ba2"/>
+    </Chunk>
+
+    <!-- Meshes: Faces -->
+    <Chunk Id="1008" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - FaceMeshes*.ba2"/>
+    </Chunk>
+
+    <!-- Meshes: LOD -->
+    <Chunk Id="1009" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - LODMeshes*.ba2"/>
+    </Chunk>
+
+    <!-- Misc/Scripts -->
+    <Chunk Id="1010" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Misc*.ba2"/>
+    </Chunk>
+
+    <!-- Particles -->
+    <Chunk Id="1011" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Particles*.ba2"/>
+    </Chunk>
+
+    <!-- Planet Data -->
+    <Chunk Id="1012" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - PlanetData*.ba2"/>
+    </Chunk>
+
+    <!-- Shaders -->
+    <Chunk Id="1013" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Shaders*.ba2"/>
+    </Chunk>
+
+    <!-- Terrain -->
+    <Chunk Id="1014" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Terrain*.ba2"/>
+    </Chunk>
+
+    <!-- Textures -->
+    <Chunk Id="1015">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Textures??.ba2"/>
+    </Chunk>
+
+    <!-- Textures: Generated -->
+    <Chunk Id="1016" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - GeneratedTextures*.ba2"/>
+    </Chunk>
+
+    <!-- Textures: LOD -->
+    <Chunk Id="1017" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - LODTextures*.ba2"/>
+    </Chunk>
+
+    <!-- English VO -->
+    <Chunk Id="1018">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Voices??.ba2"/>
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - VoicesPatch*.ba2"/>
+    </Chunk>
+
+    <!-- Sounds -->
+    <Chunk Id="1019" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - WwiseSounds*.ba2"/>
+    </Chunk>
+
+    <!-- Density Maps -->
+    <Chunk Id="1020" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - DensityMaps*.ba2"/>
+    </Chunk>
+
+    <!-- Additional common/shared content and select patch archives -->
+    <Chunk Id="1021" Tags="OmitFromDisc">
+        <FileGroup SourcePath="." DestinationPath="." Include="*.bgsdb"/>
+        <FileGroup SourcePath=".\Config\Images" DestinationPath=".\Config\Images" Include="*.*"/>
+        <FileGroup SourcePath=".\D3D12" DestinationPath=".\D3D12" Include="*.*"/>
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - MeshesPatch*.ba2"/>
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - TexturesPatch*.ba2"/>
+        <FileGroup SourcePath=".\Data\Misc" DestinationPath=".\Data\Misc" Include="*.*"/>
+        <FileGroup SourcePath=".\Data\video" DestinationPath=".\Data\video" Include="*.*"/>
+    </Chunk>
+
+    <!-- Localized content: French -->
+    <Chunk Id="1030" Languages="fr-CA;fr-FR;fr-BE;fr-CH" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Voices_fr*.ba2"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="Starfield_fr.ini"/>
+    </Chunk>
+
+    <!-- Localized content: German -->
+    <Chunk Id="1031" Languages="de-AT;de-DE;de-CH" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Voices_de*.ba2"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="Starfield_de.ini"/>
+    </Chunk>
+
+    <!-- Localized content: Japanese -->
+    <Chunk Id="1032" Languages="ja-JP" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Voices_ja*.ba2"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="Starfield_ja.ini"/>
+    </Chunk>
+
+    <!-- Localized content: Spanish -->
+    <Chunk Id="1033" Languages="es-AR;es-CL;es-CO;es-ES;es-MX" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - Voices_es*.ba2"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="Starfield_es.ini"/>
+    </Chunk>
+
+    <!-- Launch chunk -->
+    <Chunk Id="1099" Marker="Launch">
+        <FileGroup SourcePath="." DestinationPath="." Include="*.exe"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="*.dll"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="*.ini"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="*.pri"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="*.Config"/>
+        <FileGroup SourcePath="." DestinationPath="." Include="*.json"/>
+    </Chunk>
+
+</Package>

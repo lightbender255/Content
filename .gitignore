@@ -1,0 +1,11 @@
+*.exe
+*.dll
+*.ba2
+*.dmp
+*.esm
+*.png
+*.swf
+*.pri
+video
+interface
+D3D12

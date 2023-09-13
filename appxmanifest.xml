@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:desktop6="http://schemas.microsoft.com/appx/manifest/desktop/windows10/6" xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:wincap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/windowscapabilities" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap uap3 desktop desktop6 wincap rescap" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+  <Identity Name="BethesdaSoftworks.ProjectGold" Publisher="CN=21E520D9-F467-4438-A16E-79ADDBE4ECB1" Version="1.7.29.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>Starfield</DisplayName>
+    <PublisherDisplayName>Bethesda Softworks</PublisherDisplayName>
+    <Logo>Config\Images\LogoStore100x100.png</Logo>
+    <Description>Starfield</Description>
+    <desktop6:RegistryWriteVirtualization>disabled</desktop6:RegistryWriteVirtualization>
+    <desktop6:FileSystemWriteVirtualization>disabled</desktop6:FileSystemWriteVirtualization>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.18362.0" MaxVersionTested="10.0.18362.0" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.UWPDesktop" MinVersion="14.0.29231.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="en-us" />
+    <Resource Language="fr-CA" />
+    <Resource Language="fr-FR" />
+    <Resource Language="fr-BE" />
+    <Resource Language="fr-CH" />
+    <Resource Language="es-AR" />
+    <Resource Language="es-CL" />
+    <Resource Language="es-CO" />
+    <Resource Language="es-ES" />
+    <Resource Language="es-MX" />
+    <Resource Language="pl-PL" />
+    <Resource Language="pt-BR" />
+    <Resource Language="de-AT" />
+    <Resource Language="de-DE" />
+    <Resource Language="de-CH" />
+    <Resource Language="it-IT" />
+    <Resource Language="ja-JP" />
+    <Resource Language="zh-CN" />
+  </Resources>
+  <Applications>
+    <Application Id="Game" Executable="GameLaunchHelper.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Starfield" Square150x150Logo="Config\Images\Logo150x150.png" Square44x44Logo="Config\Images\TaskBarIcon.png" Description="Starfield" ForegroundText="light" BackgroundColor="transparent">
+        <uap:SplashScreen Image="Config\Images\SplashScreen1920x1080.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="ms-xbl-7bf72399" />
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="runFullTrust" />
+    <rescap:Capability Name="unvirtualizedResources" />
+  </Capabilities>
+</Package>
