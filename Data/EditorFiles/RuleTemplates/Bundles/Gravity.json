@@ -1,0 +1,22 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Gravity",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Apply Gravity/Intrinsic/A/Constant",
+					"To": "../../../Gravity Vector",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Apply Gravity",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

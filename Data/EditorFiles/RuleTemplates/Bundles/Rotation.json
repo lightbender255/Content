@@ -1,0 +1,36 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Rotation",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Init Rotation/Intrinsic/Minimum/Constant",
+					"To": "../../../Min Rotation",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Init Rotation/Intrinsic/Maximum/Constant",
+					"To": "../../../Max Rotation",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Init Rotation",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Rotate/Intrinsic/B/Constant",
+					"To": "../../../Increment (per frame)         ",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Rotate",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

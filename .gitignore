@@ -1,3 +1,4 @@
+.vscode
 *.exe
 *.dll
 *.ba2
@@ -9,3 +10,5 @@
 video
 interface
 D3D12
+Tools
+Creations

@@ -1,0 +1,85 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "BiDirectionalRotation",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "BDR_RandomRotation/Intrinsic/Maximum/ValueName",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "BDR_RandomRotation/Intrinsic/Minimum/ValueName",
+                    "Op": "Remove"
+                },
+				
+				{
+                    "From": "BDR_SetBool",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "BDR_Chance",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "BDR_Test",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "BDR_Jump",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "BDR_PosMult_Land1",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "BDR_NegMult_Land2",
+                    "Op": "Remove"
+                },
+
+				{
+                    "From": "BDR_ScaleRotation",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "BDR_UpdateRotation",
+                    "Op": "Remove"
+                },				
+				{
+                    "From": "BDR_ControlCurve/Intrinsic/Result",
+                    "Op": "Remove"
+                },		
+				{
+                    "From": "BDR_ControlCurve/Intrinsic/Input",
+                    "Op": "Remove"
+                },		
+				{
+                    "From": "BDR_ControlCurve/DisplayName",
+                    "Op": "Remove"
+                },	
+				{
+                    "From": "BDR_ControlCurve/Type",
+                    "Op": "Remove"
+                },	
+				{
+                    "From": "BDR_RandomRotation/DisplayName",
+                    "Op": "Remove"
+                },		
+				{
+                    "From": "BDR_RandomRotation/Type",
+                    "Op": "Remove"
+                },					
+				{
+                    "From": "BDR_RandomRotation/Intrinsic/Result",
+                    "Op": "Remove"
+                }
+				
+
+            ]
+        }
+    ],
+    "Version": "1"
+}

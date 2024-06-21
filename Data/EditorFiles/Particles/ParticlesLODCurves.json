@@ -1,0 +1,9 @@
+{
+  "curves": [
+    "LinearNegative",
+    "LinearPositive",
+    "LinearNull",
+    "NotLinear",
+    "SomethingSomething"
+  ]
+}

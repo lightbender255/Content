@@ -1,0 +1,102 @@
+{
+    "Category": "ShaderModels",
+    "MetaData": {
+        "RootMaterial": "1LayerMouth",
+		"DisplayName": "Standard1LayerMouth",
+		"DisableLOD": true,
+		"ComplexityCost": 10
+    },
+    "Name": "1LayerMouth",
+    "TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "MouthSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "TranslucencySettings",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "DetailBlenderSettings/DetailBlenderSettings/IsDetailBlendMaskSupported",
+					"Op": "Remove"
+				},
+				{
+					"From": "AlphaSettings/Blender/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "DissolveComponent",
+					"Op": "Add"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

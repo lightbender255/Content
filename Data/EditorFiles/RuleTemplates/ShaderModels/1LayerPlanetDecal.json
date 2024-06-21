@@ -1,0 +1,175 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "1LayerPlanetDecal",
+		"DisplayName": "PlanetDecal1Layer",
+		"DisableLOD": true,
+		"ComplexityCost": 10
+	},
+	"Name": "1LayerPlanetDecal",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "AlphaSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "AlphaSettings/HasOpacity",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "VertexColorAsTint",
+					"Op": "Add"
+				},
+				{
+					"From": "AlphaSettings/Blender/Mode",
+					"Op": "Remove"
+				},
+				{
+					"From": "AlphaSettings/Blender/VertexColorChannel",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "IsTwoSided",
+					"Op": "Remove"
+				},
+				{
+					"From": "IsDecal",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "IsPlanet",
+					"Op": "Add"
+				},
+				{
+					"From": "IsPlanet",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "IsProjectedDecal",
+					"Op": "Add"
+				},
+				{
+					"From": "IsProjectedDecal",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Projected Decal",
+					"Op": "Remove"
+				},
+				{
+					"From": "MaterialOverallAlpha",
+					"Op": "Add"
+				},
+				{
+					"From": "MaterialOverallAlpha",
+					"Op": "Move",
+					"To": "AlphaSettings/MaterialOverallAlpha"
+				},
+				{
+					"From": "OutputAlbedo",
+					"Op": "Add"
+				},
+				{
+					"From": "OutputNormals",
+					"Op": "Add"
+				},
+				{
+					"From": "OutputAmbientOcclusion",
+					"Op": "Add"
+				},
+				{
+					"From": "OutputRoughness",
+					"Op": "Add"
+				},
+				{
+					"From": "OutputMetalness",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/FlipbookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "AlphaSettings/Blender/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "DissolveComponent",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

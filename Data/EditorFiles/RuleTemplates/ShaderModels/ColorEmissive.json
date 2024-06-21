@@ -1,0 +1,165 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "ColorEmissive",
+		"DisplayName": "Standard1LayerEmissive",
+		"ComplexityCost": 10
+	},
+	"Name": "ColorEmissive",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "AlphaSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "AlphaSettings/OpacitySourceLayer",
+					"Op": "Remove"
+				},
+				{
+					"From": "AlphaSettings/Blender/Mode",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1",
+					"Op": "Add"
+				},
+				{
+					"From": "Blender1/UseVertexColor",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/BlendMode",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Metal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Ambient Occlusion",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Texture Normal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Normals Additively",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/BlendTextureNormal",
+					"Op": "Remove"
+				},
+				{
+					"From": "AlphaSettings/Blender/VertexColorChannel",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "CollisionSettings",
+					"Op": "Add"
+				},				
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "EmittanceSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "EmittanceSettings/Enabled",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "EmittanceSettings/Settings/EmissiveSourceLayer",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

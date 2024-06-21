@@ -1,0 +1,139 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "GlobalLayer",
+		"DisableLOD": true,
+		"ComplexityCost": 10
+	},
+	"Name": "GlobalLayer",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "GlobalLayerDataComponent",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer2",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer3",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Albedo",
+					"Op": "Move",
+					"To": "../../../Biome/Albedo/X"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Albedo",
+					"Op": "Move",
+					"To": "../../../Biome/Albedo/Y"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Albedo",
+					"Op": "Move",
+					"To": "../../../Biome/Albedo/Z"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Normal",
+					"Op": "Move",
+					"To": "../../../Biome/Normal/X"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Normal",
+					"Op": "Move",
+					"To": "../../../Biome/Normal/Y"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Normal",
+					"Op": "Move",
+					"To": "../../../Biome/Normal/Z"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Roughness",
+					"Op": "Move",
+					"To": "../../../Biome/Roughness/X"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Roughness",
+					"Op": "Move",
+					"To": "../../../Biome/Roughness/Y"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Roughness",
+					"Op": "Move",
+					"To": "../../../Biome/Roughness/Z"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Metalness",
+					"Op": "Move",
+					"To": "../../../Biome/Metalness/X"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Metalness",
+					"Op": "Move",
+					"To": "../../../Biome/Metalness/Y"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Metalness",
+					"Op": "Move",
+					"To": "../../../Biome/Metalness/Z"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/AmbientOcclusion",
+					"Op": "Move",
+					"To": "../../../Biome/AmbientOcclusion/X"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/AmbientOcclusion",
+					"Op": "Move",
+					"To": "../../../Biome/AmbientOcclusion/Y"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/AmbientOcclusion",
+					"Op": "Move",
+					"To": "../../../Biome/AmbientOcclusion/Z"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Opacity",
+					"Op": "Move",
+					"To": "../../../Biome/Opacity/X"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Opacity",
+					"Op": "Move",
+					"To": "../../../Biome/Opacity/Y"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Opacity",
+					"Op": "Move",
+					"To": "../../../Biome/Opacity/Z"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

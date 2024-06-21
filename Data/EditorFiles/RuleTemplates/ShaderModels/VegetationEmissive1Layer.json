@@ -1,0 +1,93 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "VegetationEmissive1Layer",
+		"DisplayName": "VegetationEmissive1Layer",
+		"ComplexityCost": 10
+	},
+	"Name": "VegetationEmissive1Layer",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "EmittanceSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "EmittanceSettings/Enabled",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "VegetationSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "VegetationSettings/Enabled",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "TerrainTintSettings",
+					"Op": "Add"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

@@ -1,0 +1,132 @@
+{
+    "Category": "ShaderModels",
+    "MetaData": {
+        "RootMaterial": "VegetationTranslucent1Layer",
+		"DisplayName": "VegetationTranslucent1Layer",
+		"ComplexityCost": 10
+    },
+    "Name": "VegetationTranslucent1Layer",
+    "TemplateRules": [
+        {
+            "Class": "BSMaterial::LayeredMaterialID",
+					"Rules": [
+						{
+							"From": "*",
+							"Op": "Remove"
+						},
+						{
+							"From": "TranslucencySettings",
+							"Op": "Add"
+						},
+						{
+							"From": "TranslucencySettings/Settings/Round Back Face Normals",
+							"Op": "Move",
+							"To": "../Round Back Face Normals"
+						},
+						{
+							"From": "TranslucencySettings/Settings/Scale",
+							"Op": "Move",
+							"To": "../Scale"
+						},
+						{
+							"From": "TranslucencySettings/Settings/TransmittanceWidth",
+							"Op": "Move",
+							"To": "../Width"
+						},
+						{
+							"From": "TranslucencySettings/Enabled",
+							"Op": "Remove"
+						},
+						{
+							"From": "TranslucencySettings/Settings",
+							"Op": "Remove"
+						},
+						{
+							"From": "AlphaSettings",
+							"Op": "Add"
+						},
+						{
+							"From": "AlphaSettings/Blender/Mode",
+							"Op": "Remove"
+						},
+						{
+							"From": "AlphaSettings/Blender/VertexColorChannel",
+							"Op": "MakeConst"
+						},
+						{
+							"From": "AlphaSettings/AlphaBlendEnabled",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1",
+							"Op": "Add"
+						},
+						{
+							"From": "Layer1/Material/UseVertexColorAsTint",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Emissive",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/HairID",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Height",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Flow",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Frost",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Secondary Opacity",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/DepthOffset",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Overlay Color",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Overlay Roughness",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/Overlay Metalness",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/ScatteringDirections",
+							"Op": "Remove"
+						},
+						{
+							"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+							"Op": "Remove"
+						},
+						{
+							"From": "VegetationSettings",
+							"Op": "Add"
+						},
+						{
+							"From": "VegetationSettings/Enabled",
+							"Op": "MakeConst"
+						},
+						{
+							"From": "TerrainTintSettings",
+							"Op": "Add"
+						}
+					]
+        }
+    ],
+    "Version": "1"
+}

@@ -1,0 +1,20 @@
+{
+    "Category": "ShaderModels",
+    "MetaData": {
+        "RootMaterial": "Invisible",
+		"ComplexityCost": 0
+    },
+    "Name": "Invisible",
+    "TemplateRules": [
+        {
+            "Class": "BSMaterial::LayeredMaterialID",
+            "Rules": [
+                {
+                    "From": "*",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

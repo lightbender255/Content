@@ -1,0 +1,71 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "BaseMaterial",
+		"Locked": true,
+		"DisableLOD": true,
+		"ComplexityCost": 10
+	},
+	"Name": "BaseMaterial",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "MaterialNoiseComponent",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "CollisionSettings",
+					"Op": "Add"
+				},				
+				{
+					"From": "Layer1",
+					"Op": "Move",
+					"To": "Base Material Layer"
+				},
+				{
+					"From": "DissolveComponent",
+					"Op": "Add"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

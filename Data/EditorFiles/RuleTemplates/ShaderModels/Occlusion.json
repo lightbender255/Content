@@ -1,0 +1,43 @@
+{
+    "Category": "ShaderModels",
+    "MetaData": {
+        "RootMaterial": "Occlusion"
+    },
+    "Name": "Occlusion",
+    "TemplateRules": [
+        {
+            "Class": "BSMaterial::LayeredMaterialID",
+            "Rules": [
+                {
+                    "From": "*",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Layer1",
+                    "Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/Override Color Blend Type",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/UVStream",
+					"Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

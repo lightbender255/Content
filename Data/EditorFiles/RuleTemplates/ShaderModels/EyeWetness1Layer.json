@@ -1,0 +1,146 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "EyeWetness1Layer",
+		"DisplayName": "CharacterEyeWetness1Layer",
+		"DisableLOD": true,
+		"ComplexityCost": 10
+	},
+	"Name": "EyeWetness1Layer",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "TranslucencySettings",
+					"Op": "Add"
+				},
+				{
+					"From": "TranslucencySettings/Settings/Subsurface Scattering Width",
+					"Op": "Move",
+					"To": "../Subsurface Scattering Width"
+				},
+				{
+					"From": "TranslucencySettings/Settings/Subsurface Scattering Strength",
+					"Op": "Move",
+					"To": "../Subsurface Scattering Strength"
+				},
+				{
+					"From": "TranslucencySettings/Settings/Scale",
+					"Op": "Move",
+					"To": "../Scale"
+				},
+				{
+					"From": "TranslucencySettings/Settings/SpecLobe 1 Roughness Scale",
+					"Op": "Move",
+					"To": "../SpecLobe 1 Roughness Scale"
+				},
+				{
+					"From": "TranslucencySettings/Settings/SpecLobe 2 Roughness Scale",
+					"Op": "Move",
+					"To": "../SpecLobe 2 Roughness Scale"
+				},
+				{
+					"From": "TranslucencySettings/Enabled",
+					"Op": "Remove"
+				},
+				{
+					"From": "TranslucencySettings/Settings",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Opacity",
+					"Op": "Move",
+					"To": "Diffuse Opacity"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Move",
+					"To": "Roughness Opacity"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Metalness",
+					"Op": "Move",
+					"To": "Specularity"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

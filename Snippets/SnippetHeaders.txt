@@ -1,0 +1,8 @@
+CCT Creature: 
+Editor ID|Name|Biomes|Attack 1|Attack 2|Defense 1|Defense 2|Faction 1|Faction 2|Diet|Size|Skin|Speed|Temperament|Organic Resource|Resource Type|Special|Enviro Behavior 1|Enviro Behavior 2|Enviro Behavior 3|Race Overrides|Schedule|Challenge|Combat Style
+
+Planet Data:
+Planet|System|Biomes|Fauna|Flora|Resources|Traits|Day Length
+
+Location Cells:
+Location ID|Name|Interiors|Exteriors|Worldspaces

@@ -1,0 +1,30 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "StarmapBodyEffect",
+		"Locked": false,
+		"DisableLOD": true,
+		"ComplexityCost": 10
+	},
+	"Name": "StarmapBodyEffect",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "StarmapBodyEffect",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

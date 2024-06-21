@@ -1,0 +1,143 @@
+{
+    "Asteroids": [
+        {
+            "Near": {
+                "Curves": [
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 60
+            }
+        },
+        {
+            "Middle": {
+                "Curves": [
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 80
+            }
+        },
+        {
+            "Far": {
+                "Curves": [
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 100
+            }
+        }
+    ],
+    "Smoke": [
+        {
+            "Near": {
+                "Curves": [
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 60
+            }
+        },
+        {
+            "Middle": {
+                "Curves": [
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 80
+            }
+        },
+        {
+            "Far": {
+                "Curves": [
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 100
+            }
+        }
+    ],
+    "Weapons": [
+        {
+            "Near": {
+                "Curves": [
+                    {
+                        "BurstEmitter": "SomethingSomething"
+                    },
+                    {
+                        "BurstEmitter": "SomethingSomething"
+                    },
+                    {
+                        "BurstEmitter": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 50
+            }
+        },
+        {
+            "Middle": {
+                "Curves": [
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 93
+            }
+        },
+        {
+            "Far": {
+                "Curves": [
+                    {
+                        "SyncGeometryRotAndPhysicsQuat": "LinearNull"
+                    },
+                    {
+                        "SpawnRate": "SomethingSomething"
+                    }
+                ],
+                "Maximum": 1144
+            }
+        }
+    ]
+}

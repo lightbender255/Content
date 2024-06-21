@@ -1,0 +1,837 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "Skin5Layer",
+		"DisplayName": "CharacterSkin5Layer",
+		"ComplexityCost": 10
+	},
+	"Name": "Skin5Layer",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "TranslucencySettings",
+					"Op": "Add"
+				},
+				{
+					"From": "TranslucencySettings/Settings/Subsurface Scattering Width",
+					"Op": "Move",
+					"To": "../Subsurface Scattering Width"
+				},
+				{
+					"From": "TranslucencySettings/Settings/Subsurface Scattering Strength",
+					"Op": "Move",
+					"To": "../Subsurface Scattering Strength"
+				},
+				{
+					"From": "TranslucencySettings/Settings/Scale",
+					"Op": "Move",
+					"To": "../Scale"
+				},
+				{
+					"From": "TranslucencySettings/Settings/TransmittanceWidth",
+					"Op": "Move",
+					"To": "../Transmittance Width"
+				},
+				{
+					"From": "TranslucencySettings/Settings/SpecLobe 1 Roughness Scale",
+					"Op": "Move",
+					"To": "../SpecLobe 1 Roughness Scale"
+				},
+				{
+					"From": "TranslucencySettings/Settings/SpecLobe 2 Roughness Scale",
+					"Op": "Move",
+					"To": "../SpecLobe 2 Roughness Scale"
+				},
+				{
+					"From": "TranslucencySettings/Settings/Transmittance Source Layer",
+					"Op": "Move",
+					"To": "../Transmittance Source Layer"
+				},
+				{
+					"From": "TranslucencySettings/Enabled",
+					"Op": "Remove"
+				},
+				{
+					"From": "TranslucencySettings/Settings",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/Color Tint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/Override Color Blend Type",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer3/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/Color Tint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/Override Color Blend Type",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer4/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/Color Tint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/Override Color Blend Type",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer5/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/Color Tint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/Override Color Blend Type",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer6/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/Color Tint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/Override Color Blend Type",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/AmbientOcclusion",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Curvature",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1",
+					"Op": "Add"
+				},
+				{
+					"From": "Blender1/BlendMode",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Blender1/UseVertexColor",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Metal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Ambient Occlusion",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/BlendTextureNormal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1/Blend Normals additively",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1",
+					"Op": "Move",
+					"To": "Layer2/Blender1"
+				},
+				{
+					"From": "Blender2",
+					"Op": "Add"
+				},
+				{
+					"From": "Blender2/BlendMode",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Blender2/UseVertexColor",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2/Blend Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2/Blend Metal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2/Blend Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2/Blend Ambient Occlusion",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2/BlendTextureNormal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2/Blend Normals additively",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender2",
+					"Op": "Move",
+					"To": "Layer3/Blender2"
+				},
+				{
+					"From": "Blender3",
+					"Op": "Add"
+				},
+				{
+					"From": "Blender3/BlendMode",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Blender3/UseVertexColor",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3/Blend Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3/Blend Metal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3/Blend Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3/Blend Ambient Occlusion",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3/BlendTextureNormal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3/Blend Normals additively",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender3",
+					"Op": "Move",
+					"To": "Layer4/Blender3"
+				},
+				{
+					"From": "Blender4",
+					"Op": "Add"
+				},
+				{
+					"From": "Blender4/BlendMode",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Blender4/UseVertexColor",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4/Blend Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4/Blend Metal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4/Blend Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4/Blend Ambient Occlusion",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4/BlendTextureNormal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4/Blend Normals additively",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender4",
+					"Op": "Move",
+					"To": "Layer5/Blender4"
+				},
+				{
+					"From": "Blender5",
+					"Op": "Add"
+				},
+				{
+					"From": "Blender5/BlendMode",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Blender5/UseVertexColor",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5/Blend Albedo",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5/Blend Metal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5/Blend Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5/Blend Ambient Occlusion",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5/BlendTextureNormal",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5/Blend Normals additively",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender5",
+					"Op": "Move",
+					"To": "Layer6/Blender5"
+				},
+				{
+					"From": "DissolveComponent",
+					"Op": "Add"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

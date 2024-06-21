@@ -1,0 +1,40 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Point Attractor",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Attractor Init/Intrinsics/[0]/upParameterSet/A/Constant",
+					"To": "../../../../../Attractor Position",
+                    "Op": "Move"
+                },				
+				{
+                    "From": "Attractor Init/Intrinsics/[1]/upParameterSet/A/Constant",
+					"To": "../../../../../Strength",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Attractor Init",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Attractor Sim",
+                    "Op": "Remove"
+                },				
+				{
+                    "From": "Attractor Kill/Intrinsic/B/Constant",
+					"To": "../../../Kill Radius",
+                    "Op": "Move"
+                },
+                {
+                    "From": "Attractor Kill",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

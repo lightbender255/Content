@@ -173,6 +173,18 @@
 		"defaultQuality" : "ultra"
 	},
 	{
+		"gpuId" : "AMD Radeon RX 7900 GRE",
+		"defaultQuality" : "ultra"
+	},
+	{
+		"gpuId" : "AMD Radeon RX 7800 XT",
+		"defaultQuality" : "high"
+	},
+	{
+		"gpuId" : "AMD Radeon RX 7700 XT",
+		"defaultQuality" : "high"
+	},
+	{
 		"gpuId" : "AMD Radeon RX 7600",
 		"defaultQuality" : "medium"
 	},

@@ -1,0 +1,44 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "Terrain1Layer",
+		"ComplexityCost": 10
+	},
+	"Name": "Terrain1Layer",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "TerrainSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "TerrainSettings/Enabled",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Layer1/Material/FlipBookComp",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Texture Resolution",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

@@ -1,0 +1,23 @@
+{
+    "Category": "ShaderModels",
+    "MetaData": {
+        "RootMaterial": "1LayerEyebrow"
+    },
+    "Name": "1LayerEyebrow",
+    "TemplateRules": [
+        {
+            "Class": "BSMaterial::LayeredMaterialID",
+            "Rules": [
+                {
+                    "From": "*",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Layer1",
+                    "Op": "Add"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

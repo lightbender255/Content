@@ -1,0 +1,1 @@
+(Ref:<REFR:EditorID>, Form:<REFR:BaseEditorID>, LinkedRefs:<REFR:LinkedRefs.Bases>, LinkedFrom:<REFR:LinkedFrom.Bases>, LocRefTypes:<REFR:LocRefType>)

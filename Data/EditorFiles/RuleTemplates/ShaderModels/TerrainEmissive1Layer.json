@@ -1,0 +1,48 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "TerrainEmissive1Layer",
+		"ComplexityCost": 10
+	},
+	"Name": "TerrainEmissive1Layer",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Texture Resolution",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "EmittanceSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "EmittanceSettings/Enabled",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "TerrainSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "TerrainSettings/Enabled",
+					"Op": "MakeConst"
+				},
+				{
+					"From": "Layer1/Material/FlipBookComp",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

@@ -1,0 +1,31 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Drag",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Input Drag Rate/Intrinsic/A",
+					"To": "../../Drag Rate",
+                    "Op": "Move"
+                },
+                {
+                    "From": "Apply Drag",
+                    "To": "Drag output",
+                    "Op": "Move"
+                },
+                {
+                    "From": "Input Drag Rate",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Drag Rate Math",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

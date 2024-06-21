@@ -3,7 +3,8 @@
 <Package>
     <!-- Masterfiles -->
     <Chunk Id="1001" Tags="OmitFromDisc">
-        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="*.esm"/>
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield.esm"/>
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="BlueprintShips-Starfield.esm"/>
     </Chunk>
 
     <!-- Animations -->
@@ -112,6 +113,12 @@
         <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="Starfield - TexturesPatch*.ba2"/>
         <FileGroup SourcePath=".\Data\Misc" DestinationPath=".\Data\Misc" Include="*.*"/>
         <FileGroup SourcePath=".\Data\video" DestinationPath=".\Data\video" Include="*.*"/>
+    </Chunk>
+
+    <!-- Post Launch Content -->
+    <Chunk Id="1022" Tags="OmitFromDisc">
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="SF*.esm"/>
+        <FileGroup SourcePath=".\Data" DestinationPath=".\Data" Include="SF*.ba2"/>
     </Chunk>
 
     <!-- Localized content: French -->

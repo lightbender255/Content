@@ -1,0 +1,186 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "Experimental",
+		"ComplexityCost": 10
+	},
+	"Name": "Experimental",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Add"
+				},
+				{
+					"From": "IsTwoSided",
+					"Op": "Add"
+				},
+				{
+					"From": "IsTwoSided",
+					"Op": "Move",
+					"To": "AlphaSettings/IsTwoSided"
+				},
+				{
+					"From": "Blender1",
+					"Op": "Move",
+					"To": "Layer2/Blender1"
+				},
+				{
+					"From": "Blender2",
+					"Op": "Move",
+					"To": "Layer3/Blender2"
+				},
+				{
+					"From": "Blender3",
+					"Op": "Move",
+					"To": "Layer4/Blender3"
+				},
+				{
+					"From": "Blender4",
+					"Op": "Move",
+					"To": "Layer5/Blender4"
+				},
+				{
+					"From": "Blender5",
+					"Op": "Move",
+					"To": "Layer6/Blender5"
+				},
+				{
+					"From": "Blender6",
+					"Op": "Move",
+					"To": "Layer7/Blender6"
+				},
+				{
+					"From": "Blender7",
+					"Op": "Move",
+					"To": "Layer8/Blender7"
+				},
+				{
+					"From": "Blender8",
+					"Op": "Move",
+					"To": "Layer9/Blender8"
+				},
+				{
+					"From": "Blender9",
+					"Op": "Move",
+					"To": "Layer10/Blender9"
+				},
+				{
+					"From": "IsTemplate",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer3/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer4/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer5/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer6/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer7/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer7/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer7/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer8/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer8/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer8/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer9/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer9/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer9/Material/TextureSet/Mask",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

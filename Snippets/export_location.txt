@@ -1,0 +1,1 @@
+<LCTN:EditorID>|<LCTN:Name>|<LCTN:Keywords>|<LCTN:References.Import=import_location_references.txt>|<LCTN:Worldspaces.Import=import_location_worldspaces.txt>|<LCTN:Interiors.Import=import_location_interiors.txt>

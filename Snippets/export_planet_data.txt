@@ -1,0 +1,1 @@
+<PNDT:Name>|<PNDT:StarSystem>|<PNDT:Biomes>|<PNDT:FaunaKeyword>(<PNDT:UniqueFauna.Count>) <PNDT:UniqueFauna.Import=import_creature_name_only.txt>|<PNDT:FloraKeyword>(<PNDT:UniqueFlora.Count>) <PNDT:Flora.Import=import_planet_flora.txt>|<PNDT:Resources.Count> Resources<PNDT:Resources>|<PNDT:Traits>|<PNDT:DayLength>

@@ -1,0 +1,55 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Age & LifeTime",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Random Lifetime/Intrinsic/Minimum/Constant",
+					"To": "../../../Initial Lifetime (Minimum)",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Random Lifetime/Intrinsic/Maximum/Constant",
+					"To": "../../../Initial Lifetime (Maximum)",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Random Lifetime",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Set Age",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Keep Lifetime",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "FrameTime Accumulator",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Accumulate Frame",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Decrement Lifetime",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Update Age",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Mark for death",
+                    "Op": "Remove"
+                }				
+            ]
+        }
+    ],
+    "Version": "1"
+}

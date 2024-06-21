@@ -1,0 +1,218 @@
+{
+	"Category": "ShaderModels",
+	"MetaData": {
+		"RootMaterial": "2LayerEffect",
+		"DisplayName": "Effect2Layer",
+		"ComplexityCost": 10
+	},
+	"Name": "2LayerEffect",
+	"TemplateRules": [
+		{
+			"Class": "BSMaterial::LayeredMaterialID",
+			"Rules": [
+				{
+					"From": "*",
+					"Op": "Remove"
+				},
+				{
+					"From": "FlowSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "EffectSettings",
+					"Op": "Add"
+				},
+				{
+					"From": "EffectSettings/IsAlphatested",
+					"Op": "Remove"
+				},
+				{
+					"From": "EffectSettings/IsAlphaPremultiplied",
+					"Op": "Remove"
+				},
+				{
+					"From": "EffectSettings/ReceiveDirectionalShadows",
+					"Op": "Remove"
+				},
+				{
+					"From": "EffectSettings/ReceiveNonDirectionalShadows",
+					"Op": "Remove"
+				},
+				{
+					"From": "EffectSettings/Zwrite",
+					"Op": "Remove"
+				},
+				{
+					"From": "EffectSettings/Frosting",
+					"Op": "Remove"
+				},
+				{
+					"From": "OpacityComponent",
+					"Op": "Add"
+				},
+				{
+					"From": "OpacityComponent/Use a third layer of Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "DistortionComponent",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer1/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer1/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1",
+					"Op": "Add"
+				},
+				{
+					"From": "Blender1/UseDetailBlendMask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2",
+					"Op": "Add"
+				},
+				{
+					"From": "Layer2/Material/UseVertexColorAsTint",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Emissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/HairID",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Height",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Transmissive",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Mask",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Flow",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Frost",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Secondary Opacity",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/DepthOffset",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Overlay Color",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Overlay Roughness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/Overlay Metalness",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/ScatteringDirections",
+					"Op": "Remove"
+				},
+				{
+					"From": "Layer2/Material/TextureSet/ScatteringForwardAlpha",
+					"Op": "Remove"
+				},
+				{
+					"From": "Blender1",
+					"Op": "Move",
+					"To": "Layer2/Blender1"
+				},
+				{
+					"From": "DissolveComponent",
+					"Op": "Add"
+				},
+				{
+					"From": "Layered Edge Falloff",
+					"Op": "Add"
+				},
+				{
+					"From": "Layered Edge Falloff/Use falloff for third layer",
+					"Op": "Remove"
+				}
+			]
+		}
+	],
+	"Version": "1"
+}

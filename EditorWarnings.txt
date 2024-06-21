@@ -1,0 +1,59 @@
+EditorWarnings.txt log opened (PC-64)
+HAVOK: Unable to to hkCompatFormats.dll from executable directory.  Will not be able to version Havok assets.
+MASTERFILE: Missing AssetDB checkpoint file!
+DEFAULT:				D3D12CreateDevice failed with error -2005270524 [0x887a0004]
+MEMORY:				Allocating 5512 in Scrap Heap instead of inside BSAutoScrapStack
+SHADERS:				Shader pipeline library is out of date and requires rebuilding
+EDITOR:				Network request failed. Url=https://assetmgr.bgs.local/config/Genesis Reason=(3) Host assetmgr.bgs.local not found
+EDITOR:				Query operation failed. Name=Opening Database, Reason=Access denied for user 'ODBC'@'localhost' (using password: NO) QMYSQL: Unable to connect
+SYSTEM:				[SerializeDB] res:E4B546BA:841E05BE:0074616D: DirectoryComponent contains unknown ID 313302
+SYSTEM:				[SerializeDB] res:894E9202:7A9B9592:0074616D: DirectoryComponent contains unknown ID 160359
+SYSTEM:				[SerializeDB] res:E4B546BA:1D175404:0074616D: DirectoryComponent contains unknown ID 320897
+MATERIALS:				[BSMaterial] Loaded compiled DB Materials/MaterialsBeta.cdb built with 1.12.32.1
+MATERIALS:				[BSMaterial] Created 109 new empty objects in 1676.3 milliseconds
+PARTICLE_ENGINE:				FindOrCreateMaterial: Failed to load Data/Materials/Effects/Liquids/GooLiquidMesh.mat
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Failed to find VFX LOD curve preset for ID: 1
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+PARTICLE_ENGINE:				Validate multiple output
+AUDIO:				Unknown Wwise Duration string: Mixed
+AUDIO:				Unknown Wwise Duration string: Mixed
+RENDERING:				Packing vertex position with coordinate outside given range -- Coordinate: [-512.000000 -512.000000 0.000000]  Range: 512.000000
+DEFAULT:				Version(0d) for CPU Mesh Data\EditorFiles\Primitives\VCPreviewCube01.nif has old version of meshlets. It will reduce performance.
+MASTERFILE:				===========================================================
+FORMS:				Form 'InvalidCell' (00000024) of type CELL in file 'UNKNOWN' was not freed.
+FORMS:				Forms were leaked during ClearData. Check Warnings file for more info.
+AUDIO:				Unknown Wwise Duration string: Mixed
+AUDIO:				Unknown Wwise Duration string: Mixed
+MATERIALS:				[BSMaterial] Created 65 new empty objects in 1498.3 milliseconds
+PERFORMANCE:				BSMaterial::GetLayeredMaterial(const BSFixedString& arName) is deprecated (and very slow). Please use BSMaterial::FindLayeredMaterialByFile() instead, with a filename.
+DEFAULT:				AttributeProcessor::Accept : EmittanceSettings.Settings.EnableAdaptiveLimits Cannot find ::hidden attribute condition property : Enabled
+DEFAULT:				Metadata::Hidden using property : Enabled was registered but cannot be found now (deleted or moved). /EmittanceSettings/Settings/EnableAdaptiveLimits will always be invisible
+DEFAULT:				Can't find property FlowMap.FileName for ModelNode Apply Flow on Albedo + Norm. + Met. + Rough.
+DEFAULT:				Can't find property FlowMap.FileName for ModelNode Apply Flow on Opacity
+DEFAULT:				Can't find property FlowMap.FileName for ModelNode Apply Flow on Emissivity
+MASTERFILE:				===========================================================
+AUDIO:				Unknown Wwise Duration string: Mixed
+AUDIO:				Unknown Wwise Duration string: Mixed
+MATERIALS:				[BSMaterial] Created 6 new empty objects in 1097.2 milliseconds
+MASTERFILE:				===========================================================
+FORMS:				Form '' (00000807) of type NPC_ in file 'UNKNOWN' was not freed.
+FORMS:				Forms were leaked during ClearData. Check Warnings file for more info.
+AUDIO:				Unknown Wwise Duration string: Mixed
+AUDIO:				Unknown Wwise Duration string: Mixed
+MASTERFILE:				===========================================================
+AUDIO:				Unknown Wwise Duration string: Mixed
+AUDIO:				Unknown Wwise Duration string: Mixed
+FORMS:	<CURRENT> 		DFOB '' (00000000)	Blank editor ID on this form should be fixed.
+FORMS:	<CURRENT> 		DFOB '' (00000000)	Blank editor ID on this form should be fixed.

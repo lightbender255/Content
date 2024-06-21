@@ -1,0 +1,22 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Ribbon",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Set Ribbon/Intrinsic/A/Constant",
+					"To": "../../../Ribbon",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Set Ribbon",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

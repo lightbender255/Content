@@ -1,0 +1,53 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Basic Init",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Set Scale/Intrinsic/A/Constant",
+					"To": "../../../Initial Scale",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Set Stretch Scale/Intrinsic/A/Constant",
+					"To": "../../../Initial Stretch Scale",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Set color/Intrinsic/Color/Constant",
+					"To": "../../../Initial Color",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Stretch particles/Intrinsic/A/Constant",
+					"To": "../../../Stretch",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Set Scale",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Set Stretch Scale",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Initial Position",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Set color",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Stretch particles",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

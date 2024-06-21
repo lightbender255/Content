@@ -1,0 +1,31 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "Velocity",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+				{
+                    "From": "Random Velocity/Intrinsic/Minimum/Constant",
+					"To": "../../../Initial Velocity (Minimum)",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Random Velocity/Intrinsic/Maximum/Constant",
+					"To": "../../../Initial Velocity (Maximum)",
+                    "Op": "Move"
+                },
+				{
+                    "From": "Random Velocity",
+                    "Op": "Remove"
+                },
+				{
+                    "From": "Apply Velocity",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}

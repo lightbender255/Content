@@ -1,0 +1,73 @@
+{
+    "Category": "Bundles",
+    "MetaData": "Nothing",
+    "Name": "UVScroll",
+    "TemplateRules": [
+        {
+            "Class": "null",
+            "Rules": [
+                {
+                    "From": "Scale ScrollSpeedU/Intrinsic/A",
+                    "To": "../../U Scroll Driver",
+                    "Op": "Move"
+                },
+                {
+                    "From": "Scale ScrollSpeedV/Intrinsic/A",
+                    "To": "../../V Scroll Driver",
+                    "Op": "Move"
+                },
+				{
+                    "From": "INPUT ScrollSpeed U/Intrinsic/A/Constant",
+					"To": "../../../U Base ScrollSpeedU",
+                    "Op": "Move"
+                },
+                {
+                    "From": "INPUT ScrollSpeed V/Intrinsic/A/Constant",
+                    "To": "../../../V Base ScrollSpeedV",
+                    "Op": "Move"
+                },
+				{
+                    "From": "INPUT ScrollSpeed U",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "INPUT ScrollSpeed V",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Scroll Time Accumulator",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Accumulate Scroll Time",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Init ScrollV",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Init ScrollU",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Scale ScrollSpeedU",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Scale ScrollSpeedV",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Scroll U",
+                    "Op": "Remove"
+                },
+                {
+                    "From": "Scroll V",
+                    "Op": "Remove"
+                }
+            ]
+        }
+    ],
+    "Version": "1"
+}
